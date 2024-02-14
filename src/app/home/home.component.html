@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <!-- About me -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/yo.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <br><br>
+                <p>I am an exceptional developer with the ability to adapt swiftly to diverse situations, consistently demonstrating proactivity in my work performance. My specialization includes a solid command of key technologies such as HTML, CSS, JavaScript, TypeScript, C#, .NET, SQL, MySQL, Angular, and Web API, among other tools. Additionally, I am currently enrolled in a part-time bootcamp to further enhance my knowledge and improve my skills</p>
+            </div>
+        </div>
+        <!-- Featured Project -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel> 
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>

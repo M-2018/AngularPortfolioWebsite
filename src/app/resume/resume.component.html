@@ -1,0 +1,168 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;font-size: 14px;text-decoration: none;">v</div>    
+                    </div>
+                </button>
+                
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Sample Copanny</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Sample Copanny</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Sample Copanny</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>                
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;font-size: 14px;text-decoration: none;">v</div>    
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor´s of Science In Computer</h2>
+                    <h3 class="text-primary">Purdue University</h3>
+                    <ul>
+                        <li>Graduated from SENA in 2010</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor´s of Science In Computer</h2>
+                    <h3 class="text-primary">Purdue University</h3>
+                    <ul>
+                        <li>Graduated from SENA in 2010</li>
+                    </ul>
+                </div>
+                
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isCertificationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Certifications</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;font-size: 14px;text-decoration: none;">v</div>    
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h3 class="text-primary">Angular Basics</h3>
+                    <ul>
+                        <li>Obtained in Augist 2010</li>
+                        <li>40 hours</li>
+                    </ul>
+                    <h3 class="text-primary">HTML Basics</h3>
+                    <ul>
+                        <li>Obtained in Augist 2010</li>
+                        <li>20 hours</li>
+                    </ul>
+                </div>    
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isHardSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Hard Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isHardSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isHardSkillsOpen" style="color: white;font-size: 14px;text-decoration: none;">v</div>    
+                    </div>
+                </button>
+
+                <div class="row" style="text-align: center;">
+                    <div class="col">
+                        <h3>Programming Language</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>C#</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks And Libraries</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>C#</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills</h3>
+                        <ul>
+                            <li>SoUrce Control via Git</li>
+                            <li>Source Control via TFS</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
+                </div>    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSoftSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Soft Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSoftSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSoftSkillsOpen" style="color: white;font-size: 14px;text-decoration: none;">v</div>    
+                    </div>
+                </button>
+
+                <div class="row" style="text-align: center;">
+                    <h3>Soft Skills</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>C#</li>
+                            <li>C#</li>
+                        </ul>                
+                </div>    
+            </accordion-group>
+        </accordion>
+    </div>    
+</div>
